@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Data Explorer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <h1>Trial Data Explorer</h1>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <button onclick="loadTable('inner')">Inner Aqueous</button>
+        <button onclick="loadTable('outer')">Outer Aqueous</button>
+        <button onclick="loadTable('lipids')">Lipids</button>
+    </div>
+
+    <!-- Search Box -->
+    <input type="text" id="search" class="search-box" placeholder="Search trials..." onkeyup="filterTable()">
+
+    <!-- Data Table -->
+    <table id="data-table">
+        <thead>
+            <tr id="table-header"></tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+
+    <!-- Load JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
